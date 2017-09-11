@@ -10,9 +10,20 @@ this document shows you how to create an asciidoctor-epub3 document
 === Command:
   ☐ asciidoctor-epub3 -D output spine.adoc
 
-
-
 === Notes
   1.  Do not use the latest version of ruby (issue with asciidoctor-epub3)
   2. Creating epub needs to have a special layout (see the asciidoctor-epub3 documentation)
   3. The `spine` must be the first document of the project i.e. `spine.adoc`. You can call this file whatever you want but it must content a Table of Content (TOC) stucture of your eupb (see example)
+
+=== Tree
+
+  ➜  asciidoctor-epub3-example git:(master) tree
+  .
+  ├── authors.adoc
+  ├── copyright.adoc
+  ├── GEMFILE
+  ├── images
+  ├── readme.adoc
+  ├── section1.adoc
+  ├── section2.adoc
+  └── spine.adoc
