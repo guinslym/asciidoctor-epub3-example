@@ -7,7 +7,7 @@ Guinsly Mondésir
 :description: This is an epub (version 3) that show the user how to create EPUB3 files
 :keywords: Github, EPUB3, asciidoc, asciidoctor-epub3, Montréal, Québec, Guinsly Mondésir
 ifndef::ebook-format[:leveloffset: 1]
-//...and so on
+//...comments
 
 include::copyright.adoc[]
 

@@ -1,0 +1,37 @@
+[#chapter-section1]
+= Changing the Cover Image
+
+Ereaders have different image resolution and file size limits regarding a book's cover.
+Kindle covers tend to be 1050x1600 (16:9 resolution), which is the size of the sample cover provided with {project-name}.
+To ensure your cover displays correctly, you'll want to review the documentation or publisher guidelines for the reading platform you're targeting.
+
+WARNING: We've found that if the book cover is more than 1600px on any side, Aldiko will not render it and may even crash.
+
+Feel free to use the SVG of the sample cover in the [path]_data/images_ folder as a template for creating your own cover.
+Once your image is ready, you can replace the placeholder cover image by defining the `front-cover-image` attribute in the header of the master document.
+
+[source,asciidoc]
+----
+:front-cover-image: image:cover.png[Front Cover,1050,1600]
+----
+
+The image is resolved relative to the directory specified in the `imagesdir` attribute, which defaults to the directory of the spine document.
+The image can be in any format, though we recommend using PNG, JPG, or SVG as they are the most portable formats.
+
+IMPORTANT: *You should always specify the dimensions of the cover image.*
+This ensures the viewer will preserve the aspect ratio if it needs to be scaled to fit the screen.
+If you don't specify a width and height, then the dimensions are assumed to be 1050x1600.
+
+=== How to Organize Images by Chapter
+
+You can set the `imagesdir` attribute per chapter (as long as the attribute is not overridden by the API).
+To do so, use an attribute entry to set the value of the `imagesdir` attribute on the line above the include directive for a chapter.
+
+[source,asciidoc]
+----
+:imagesdir: chapter-one/images
+\include::chapter-one.adoc[]
+
+:imagesdir: chapter-two/images
+\include::chapter-two.adoc[]
+----

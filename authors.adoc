@@ -1,0 +1,7 @@
+[#chapter-authors]
+= Authors
+
+asciidoctor-epub3 was written by https://github.com/mojavelinux[Dan Allen] and https://github.com/graphitefriction[Sarah White] of OpenDevise on behalf of the Asciidoctor Project.
+
+1. Dan Allen
+2. Sara White
