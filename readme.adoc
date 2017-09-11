@@ -2,10 +2,6 @@
 
 this document shows you how to create an asciidoctor-epub3 document
 
-== Readme
-
-My first book published made with asciidoctor
-
 === Prerequisites
   ☐ rvm install ruby-2.0.0-p648
   ☐ rvm use ruby-2.0.0-p648
