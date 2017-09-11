@@ -1,0 +1,22 @@
+== Example
+
+this document shows you how to create an asciidoctor-epub3 document
+
+== Readme
+
+My first book published made with asciidoctor
+
+=== Prerequisites
+  ☐ rvm install ruby-2.0.0-p648
+  ☐ rvm use ruby-2.0.0-p648
+  ☐ NOKOGIRI_USE_SYSTEM_LIBRARIES=1 gem install asciidoctor-epub3 --pre
+
+=== Command:
+  ☐ asciidoctor-epub3 -D output spine.adoc
+
+
+
+=== Notes
+  1.  Do not use the latest version of ruby (issue with asciidoctor-epub3)
+  2. Creating epub needs to have a special layout (see the asciidoctor-epub3 documentation)
+  3. The `spine` must be the first document of the project. You can call this file whatever you want but it must content a Table of Content (TOC) style stucture of your document (see example)
