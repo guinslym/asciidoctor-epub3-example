@@ -21,7 +21,6 @@ this document shows you how to create an asciidoctor-epub3 document
   .
   ├── authors.adoc
   ├── copyright.adoc
-  ├── GEMFILE
   ├── images
   ├── readme.adoc
   ├── section1.adoc
